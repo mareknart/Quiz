@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.item{
+    margin: 10px;
+    width: 100%;
+}
