@@ -6,4 +6,4 @@ Main goal is answer correctly on queesion about world's countries, it's capitals
 
 ## All graphic used in project came from: 
 
-[https://wikipedia.org]Wikipedia 
+[Wikiedia](https://wikipedia.org)

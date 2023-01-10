@@ -1,0 +1,29 @@
+.control{
+    margin-bottom: 0.5rem;
+    color: white;
+    padding: 0.5rem;
+}
+
+.control label{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.control input{
+    font: inherit;
+    padding: 0.35rem;
+    border-radius: 4px;
+    display: block;
+}
+
+.actions{
+    text-align: right;
+    margin:  0.5rem;
+}
+
+.actions button{
+    font-size: 1.25rem;
+}

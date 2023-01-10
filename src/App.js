@@ -4,6 +4,8 @@ import CountryData from "./components/wiki/CountryData";
 import Navbar from "./components/layout/Navbar";
 import Main from "./pages/Main";
 
+
+
 const App = () => {
   return (
     <Navbar>

@@ -1,9 +1,6 @@
 nav {
     display: flex;
     color: white;
-    width: 100%;
-    font-size: 2rem;
-    font-weight: bold;
     align-items: center;
     align-content: center;
     height: 5rem;
@@ -14,4 +11,14 @@ nav {
 nav .scroll{
     position: sticky;
     box-shadow: 0 10px 10px;
+}
+
+.title{
+    width: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.player{
+    font-size: 1.5rem;
 }
