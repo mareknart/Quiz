@@ -9,7 +9,6 @@ const Player = (props) => {
   const playerNameRef = useRef();
   const dispatch = useDispatch();
 
-  
 
   const submitNameHandler = (event) => {
     event.preventDefault();
@@ -19,6 +18,7 @@ const Player = (props) => {
         name: playerName,
       })
     );
+    props.enteredName();
   };
 
   return (

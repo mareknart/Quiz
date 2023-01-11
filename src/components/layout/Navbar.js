@@ -8,7 +8,7 @@ const Navbar = (props) => {
     <Fragment>
       <nav className={classes.nav}>
         <div className={classes.title}>Quiz geograficzny</div>
-        {player && (
+        {player.player.name && (
           <div>
             <div className={classes.player}>Witaj {player.player.name}</div>
           </div>

@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const playerSlice = createSlice({
   name: "player",
   initialState: {
-    player: { name: null, language: "PL", difficulty: null },
+    player: { name: null, language: null, difficulty: null },
     score: { 0: 0, 1: 0, 2: 0 },
   },
   reducers: {

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Card from "../../UI/Card";
 import classes from "./MenuTile.module.css";
-import { LEVEL } from "../../../level";
 
 
 const MenuTile = (props) => {
@@ -15,10 +14,10 @@ const MenuTile = (props) => {
   };
   return (
     <Card>
-      <div className={classes.tile} key={LEVEL.name}>
+      <div className={classes.tile} key={props.name}>
         <div className={classes.title}>Poziom trudności</div>
         <div className={classes.difficulty}>
-          {LEVEL.name}
+          {props.name}
           <div className={classes.info}>
             {!isShowing && (
               <div className={classes.infoIcon} onMouseOver={mouseOverHandler}>
@@ -28,7 +27,7 @@ const MenuTile = (props) => {
           </div>
           {isShowing && (
             <div className={infoDetails} onMouseLeave={mouseLeaveHandler}>
-              {LEVEL.description}
+              {props.description}
             </div>
           )}
         </div>
