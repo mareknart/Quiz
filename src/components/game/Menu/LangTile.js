@@ -1,4 +1,3 @@
-import Card from "../../UI/Card";
 import classes from "./LangTile.module.css";
 
 const LangTile = (props) => {

@@ -11,12 +11,13 @@ const MenuTile = (props) => {
   const mouseLeaveHandler = (event) => {
     setIsShowing(false);
   };
+
+  
   return (
-    <div className={classes.tile} key={props.name}>
+    <div className={classes.tile}>
       <Card>
-        <div className={classes.title}>Poziom trudności</div>
         <div className={classes.content}>
-          {props.name}
+          {props.details.name}
           <div className={classes.info}>
             {!isShowing && (
               <div className={classes.infoIcon} onMouseOver={mouseOverHandler}>
@@ -25,7 +26,7 @@ const MenuTile = (props) => {
             )}
             {isShowing && (
               <div className={infoDetails} onMouseLeave={mouseLeaveHandler}>
-                {props.description}
+                {props.details.description}
               </div>
             )}
           </div>

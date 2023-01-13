@@ -6,11 +6,7 @@
     padding: 10px;
 }
 
-.title{
-    text-align: center;
-    font-size: 2rem;
-    border-bottom: 1px solid white;
-}
+
 
 .content{
     text-align: center;
@@ -30,7 +26,6 @@
     border-radius: 1.5rem;
     width: 1.9rem;
     text-align: center;
-    cursor: pointer;
     font-weight: bold;
 }
 

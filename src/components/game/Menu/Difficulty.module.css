@@ -1,8 +1,15 @@
 .diff{
     display: flex;
-    flex-direction: row;
 }
 
 .content{
-    margin: 0
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    color: white;
 }
