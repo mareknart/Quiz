@@ -1,3 +1,15 @@
 .item{
-    margin: 30px;
+    display: flex;
+    
+    flex-direction: column;
+    align-content: center;
+    width: 20rem;
+    margin: 10px;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+    padding-bottom: 10px;
 }

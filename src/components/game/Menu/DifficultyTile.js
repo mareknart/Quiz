@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Card from "../../UI/Card";
-import classes from "./MenuTile.module.css";
+import classes from "./DifficultyTile.module.css";
 
 
 const MenuTile = (props) => {
@@ -16,7 +16,7 @@ const MenuTile = (props) => {
     <Card>
       <div className={classes.tile} key={props.name}>
         <div className={classes.title}>Poziom trudności</div>
-        <div className={classes.difficulty}>
+        <div className={classes.content}>
           {props.name}
           <div className={classes.info}>
             {!isShowing && (

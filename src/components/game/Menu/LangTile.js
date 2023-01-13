@@ -3,13 +3,13 @@ import classes from "./LangTile.module.css";
 
 const LangTile = (props) => {
   return (
-    <Card clName={classes.item}>
+    <div className={classes.item}>
         <img
           className={classes.flag}
           src={props.country.flag}
-          alt={props.country.name}
+          alt={props.country.country}
         />
-    </Card>
+    </div>
   );
 };
 

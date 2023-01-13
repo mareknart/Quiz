@@ -13,6 +13,8 @@ const Navbar = (props) => {
             <div className={classes.player}>Witaj {player.player.name}</div>
           </div>
         )}
+        {player.player.language &&
+        <div className={classes.flag}><img className={classes.flagpic} src={player.player.flag} alt='flag'/></div>}
       </nav>
       <main>{props.children}</main>
     </Fragment>
