@@ -28,13 +28,9 @@ const Main = (props) => {
     return item.country === "Wielka Brytania";
   });
   
-  // const onLevelClickHandler = (name) => {
-  //   console.log(name);
-  // };
-
   return (
     <main className={classes.main}>
-      {/* {!language && (
+      {!language && (
         <Language
           poland={poland}
           british={british}
@@ -44,8 +40,7 @@ const Main = (props) => {
       {language && !playerNameEntered && (
         <Player enteredName={onNameEnterHandler} />
       )}
-      {playerNameEntered && <Difficulty/>} */}
-      <Difficulty/>
+      {playerNameEntered && <Difficulty/>}
     </main>
   );
 };

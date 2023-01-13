@@ -3,17 +3,15 @@ import { LEVEL } from "../../../data/Level";
 import classes from "./Difficulty.module.css";
 
 const Difficulty = () => {
-  const diffLevels = LEVEL.map((item) => (
-    <div className={classes.item} key={item.name}>
-      <DifficultyTile name={item.name} description={item.description} />
+  return (
+    <div className={classes.diff}>
+      {LEVEL.map((item) => (
+        <div key={item.name}>
+          <DifficultyTile name={item.name} description={item.description} />
+        </div>
+      ))}
     </div>
-  ));
-
-  return LEVEL.map((item) => (
-    <div className={classes.item} key={item.name}>
-      <DifficultyTile name={item.name} description={item.description} />
-    </div>
-  ));
+  );
 };
 
 export default Difficulty;

@@ -2,7 +2,6 @@ import { useState } from "react";
 import Card from "../../UI/Card";
 import classes from "./DifficultyTile.module.css";
 
-
 const MenuTile = (props) => {
   const [isShowing, setIsShowing] = useState(false);
   const infoDetails = classes.infoDetails;
@@ -13,8 +12,8 @@ const MenuTile = (props) => {
     setIsShowing(false);
   };
   return (
-    <Card>
-      <div className={classes.tile} key={props.name}>
+    <div className={classes.tile} key={props.name}>
+      <Card>
         <div className={classes.title}>Poziom trudności</div>
         <div className={classes.content}>
           {props.name}
@@ -24,15 +23,15 @@ const MenuTile = (props) => {
                 i
               </div>
             )}
+            {isShowing && (
+              <div className={infoDetails} onMouseLeave={mouseLeaveHandler}>
+                {props.description}
+              </div>
+            )}
           </div>
-          {isShowing && (
-            <div className={infoDetails} onMouseLeave={mouseLeaveHandler}>
-              {props.description}
-            </div>
-          )}
         </div>
-      </div>
-    </Card>
+      </Card>
+    </div>
   );
 };
 
