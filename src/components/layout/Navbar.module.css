@@ -14,8 +14,7 @@ nav .scroll{
 }
 
 .title{
-    display: flex;
-    width: 50%;
+    width: auto;
     font-size: 2rem;
     font-weight: bold;
 }

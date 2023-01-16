@@ -1,6 +1,144 @@
 export const Countries = [
+  { c1: [] },
   {
-    Europe: [
+    c2: [
+      {
+        country: "Antigua i Barbuda",
+        capital: "Saint John's",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Antigua_and_Barbuda.svg/1024px-Flag_of_Antigua_and_Barbuda.svg.png",
+        shape: "",
+      },
+      {
+        country: "Bahamy",
+        capital: "Nassau",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_the_Bahamas.svg/1024px-Flag_of_the_Bahamas.svg.png",
+        shape: "",
+      },
+      {
+        country: "Barbados",
+        capital: "Bridgetown",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Barbados.svg/1024px-Flag_of_Barbados.svg.png",
+        shape: "",
+      },
+      {
+        country: "Belize",
+        capital: "Belmopan",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Flag_of_Belize.svg/1024px-Flag_of_Belize.svg.png",
+        shape: "",
+      },
+      {
+        country: "Dominika",
+        capital: "Roseau",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Flag_of_Dominica.svg/1024px-Flag_of_Dominica.svg.png",
+        shape: "",
+      },
+      {
+        country: "Dominikana",
+        capital: "Santo Domingo",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_the_Dominican_Republic.svg/1024px-Flag_of_the_Dominican_Republic.svg.png",
+        shape: "",
+      },
+      {
+        country: "Grenada",
+        capital: "Saint George's",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Grenada.svg/1024px-Flag_of_Grenada.svg.png",
+        shape: "",
+      },
+      {
+        country: "Gwatemala",
+        capital: "Gwatemala",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Guatemala.svg/1024px-Flag_of_Guatemala.svg.png",
+        shape: "",
+      },
+      {
+        country: "Haiti",
+        capital: "Port-au-Price",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Haiti.svg/1024px-Flag_of_Haiti.svg.png",
+        shape: "",
+      },
+      {
+        country: "Honduras",
+        capital: "Tegucigalpa",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Flag_of_Honduras.svg/1024px-Flag_of_Honduras.svg.png",
+        shape: "",
+      },
+      {
+        country: "Jamajka",
+        capital: "Kingston",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/1024px-Flag_of_Jamaica.svg.png",
+        shape: "",
+      },
+      {
+        country: "Kanada",
+        capital: "Ottawa",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1024px-Flag_of_Canada_%28Pantone%29.svg.png",
+        shape: "",
+      },
+      {
+        country: "Kostaryka",
+        capital: "San Jose",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Costa_Rica_%28state%29.svg/1024px-Flag_of_Costa_Rica_%28state%29.svg.png",
+        shape: "",
+      },
+      {
+        country: "Kuba",
+        capital: "Hawana",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Cuba.svg/1024px-Flag_of_Cuba.svg.png",
+        shape: "",
+      },
+      {
+        country: "Meksyk",
+        capital: "Meksyk",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1024px-Flag_of_Mexico.svg.png",
+        shape: "",
+      },
+      {
+        country: "Nikaragua",
+        capital: "Managua",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Nicaragua.svg/1024px-Flag_of_Nicaragua.svg.png",
+        shape: "",
+      },
+      {
+        country: "Panama",
+        capital: "Panama",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/1024px-Flag_of_Panama.svg.png",
+        shape: "",
+      },
+      {
+        country: "Saint Kitts i Nevis",
+        capital: "Basseterre",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg/1024px-Flag_of_Saint_Kitts_and_Nevis.svg.png",
+        shape: "",
+      },
+      {
+        country: "Saint Lucia",
+        capital: "Castries",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Saint_Lucia.svg/1024px-Flag_of_Saint_Lucia.svg.png",
+        shape: "",
+      },
+      {
+        country: "Saint Vincent i Grenadyny",
+        capital: "Kingstown",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg/1024px-Flag_of_Saint_Vincent_and_the_Grenadines.svg.png",
+        shape: "",
+      },
+      {
+        country: "Salwador",
+        capital: "San Salvador",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Flag_of_El_Salvador.svg/1024px-Flag_of_El_Salvador.svg.png",
+        shape: "",
+      },
+      {
+        country: "Stany Zjednoczone",
+        capital: "Waszyngton",
+        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png",
+      },
+    ],
+  },
+  { c3: [] },
+  { c4: [] },
+  {
+    c5: [
       {
         country: "Albania",
         capital: "Tirana",
@@ -12,103 +150,120 @@ export const Countries = [
         country: "Andora",
         capital: "Andora",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Andorra.svg/1024px-Flag_of_Andorra.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Location_Andorra_Europe.png/685px-Location_Andorra_Europe.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Location_Andorra_Europe.png/685px-Location_Andorra_Europe.png",
       },
       {
         country: "Austria",
         capital: "Wiedeń",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/1024px-Flag_of_Austria.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/EU-Austria.svg/713px-EU-Austria.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/EU-Austria.svg/713px-EU-Austria.svg.png",
       },
       {
         country: "Belgia",
         capital: "Bruksela",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1024px-Flag_of_Belgium.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/EU-Belgium.svg/1024px-EU-Belgium.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/EU-Belgium.svg/1024px-EU-Belgium.svg.png",
       },
       {
         country: "Białoruś",
         capital: "Mińsk",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/1024px-Flag_of_Belarus.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Europe-Belarus.svg/713px-Europe-Belarus.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Europe-Belarus.svg/713px-Europe-Belarus.svg.png",
       },
       {
         country: "Bośnia i Hercegowina",
         capital: "Sarajewo",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/1024px-Flag_of_Bosnia_and_Herzegovina.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Europe-Bosnia_and_Herzegovina.svg/1024px-Europe-Bosnia_and_Herzegovina.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Europe-Bosnia_and_Herzegovina.svg/1024px-Europe-Bosnia_and_Herzegovina.svg.png",
       },
       {
         country: "Bułgaria",
         capital: "Sofia",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/1024px-Flag_of_Bulgaria.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/EU-Bulgaria.svg/1024px-EU-Bulgaria.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/EU-Bulgaria.svg/1024px-EU-Bulgaria.svg.png",
       },
       {
         country: "Chorwacja",
         capital: "Zagrzeb",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/1024px-Flag_of_Croatia.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/EU-Croatia.svg/1024px-EU-Croatia.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/EU-Croatia.svg/1024px-EU-Croatia.svg.png",
       },
       {
         country: "Czarnogóra",
         capital: "Podgorica",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Montenegro.svg/1024px-Flag_of_Montenegro.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Europe-Montenegro.svg/1024px-Europe-Montenegro.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Europe-Montenegro.svg/1024px-Europe-Montenegro.svg.png",
       },
       {
         country: "Czechy",
         capital: "Praga",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1024px-Flag_of_the_Czech_Republic.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/EU-Czech_Republic.svg/1024px-EU-Czech_Republic.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/EU-Czech_Republic.svg/1024px-EU-Czech_Republic.svg.png",
       },
       {
         country: "Dania",
         capital: "Kopenhaga",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/1024px-Flag_of_Denmark.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/EU-Denmark.svg/1024px-EU-Denmark.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/EU-Denmark.svg/1024px-EU-Denmark.svg.png",
       },
       {
         country: "Estonia",
         capital: "Tallinn",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_Estonia.svg/1024px-Flag_of_Estonia.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/EU-Estonia.svg/1024px-EU-Estonia.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/EU-Estonia.svg/1024px-EU-Estonia.svg.png",
       },
       {
         country: "Finlandia",
         capital: "Helisinki",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Finland.svg/1024px-Flag_of_Finland.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/EU-Finland.svg/1024px-EU-Finland.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/EU-Finland.svg/1024px-EU-Finland.svg.png",
       },
       {
         country: "Francja",
         capital: "Paryż",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/1024px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/EU-France.svg/1024px-EU-France.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/EU-France.svg/1024px-EU-France.svg.png",
       },
       {
         country: "Grecja",
         capital: "Ateny",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/1024px-Flag_of_Greece.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/EU-Greece.svg/1024px-EU-Greece.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/EU-Greece.svg/1024px-EU-Greece.svg.png",
       },
       {
         country: "Hiszpania",
         capital: "Madryt",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1024px-Flag_of_Spain.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/EU-Spain.svg/1024px-EU-Spain.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/EU-Spain.svg/1024px-EU-Spain.svg.png",
       },
       {
         country: "Holandia",
         capital: "Amsterdam",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1024px-Flag_of_the_Netherlands.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/EU-Netherlands.svg/1024px-EU-Netherlands.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/EU-Netherlands.svg/1024px-EU-Netherlands.svg.png",
       },
       {
         country: "Irlandia",
         capital: "Dublin",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/1024px-Flag_of_Ireland.svg.png",
-        shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/EU-Ireland.svg/1024px-EU-Ireland.svg.png",
+        shape:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/EU-Ireland.svg/1024px-EU-Ireland.svg.png",
       },
       {
         country: "Islandia",
@@ -280,142 +435,6 @@ export const Countries = [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/EU-Italy.svg/1024px-EU-Italy.svg.png",
       },
     ],
-    NorthAmerica: [
-      {
-        country: "Antigua i Barbuda",
-        capital: "Saint John's",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Antigua_and_Barbuda.svg/1024px-Flag_of_Antigua_and_Barbuda.svg.png",
-        shape: "",
-      },
-      {
-        country: "Bahamy",
-        capital: "Nassau",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_the_Bahamas.svg/1024px-Flag_of_the_Bahamas.svg.png",
-        shape: "",
-      },
-      {
-        country: "Barbados",
-        capital: "Bridgetown",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Barbados.svg/1024px-Flag_of_Barbados.svg.png",
-        shape: "",
-      },
-      {
-        country: "Belize",
-        capital: "Belmopan",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Flag_of_Belize.svg/1024px-Flag_of_Belize.svg.png",
-        shape: "",
-      },
-      {
-        country: "Dominika",
-        capital: "Roseau",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Flag_of_Dominica.svg/1024px-Flag_of_Dominica.svg.png",
-        shape: "",
-      },
-      {
-        country: "Dominikana",
-        capital: "Santo Domingo",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_the_Dominican_Republic.svg/1024px-Flag_of_the_Dominican_Republic.svg.png",
-        shape: "",
-      },
-      {
-        country: "Grenada",
-        capital: "Saint George's",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Grenada.svg/1024px-Flag_of_Grenada.svg.png",
-        shape: "",
-      },
-      {
-        country: "Gwatemala",
-        capital: "Gwatemala",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Guatemala.svg/1024px-Flag_of_Guatemala.svg.png",
-        shape: "",
-      },
-      {
-        country: "Haiti",
-        capital: "Port-au-Price",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Haiti.svg/1024px-Flag_of_Haiti.svg.png",
-        shape: "",
-      },
-      {
-        country: "Honduras",
-        capital: "Tegucigalpa",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Flag_of_Honduras.svg/1024px-Flag_of_Honduras.svg.png",
-        shape: "",
-      },
-      {
-        country: "Jamajka",
-        capital: "Kingston",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/1024px-Flag_of_Jamaica.svg.png",
-        shape: "",
-      },
-      {
-        country: "Kanada",
-        capital: "Ottawa",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1024px-Flag_of_Canada_%28Pantone%29.svg.png",
-        shape: "",
-      },
-      {
-        country: "Kostaryka",
-        capital: "San Jose",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Costa_Rica_%28state%29.svg/1024px-Flag_of_Costa_Rica_%28state%29.svg.png",
-        shape: "",
-      },
-      {
-        country: "Kuba",
-        capital: "Hawana",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Cuba.svg/1024px-Flag_of_Cuba.svg.png",
-        shape: "",
-      },
-      {
-        country: "Meksyk",
-        capital: "Meksyk",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1024px-Flag_of_Mexico.svg.png",
-        shape: "",
-      },
-      {
-        country: "Nikaragua",
-        capital: "Managua",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Nicaragua.svg/1024px-Flag_of_Nicaragua.svg.png",
-        shape: "",
-      },
-      {
-        country: "Panama",
-        capital: "Panama",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/1024px-Flag_of_Panama.svg.png",
-        shape: "",
-      },
-      {
-        country: "Saint Kitts i Nevis",
-        capital: "Basseterre",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg/1024px-Flag_of_Saint_Kitts_and_Nevis.svg.png",
-        shape: "",
-      },
-      {
-        country: "Saint Lucia",
-        capital: "Castries",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Saint_Lucia.svg/1024px-Flag_of_Saint_Lucia.svg.png",
-        shape: "",
-      },
-      {
-        country: "Saint Vincent i Grenadyny",
-        capital: "Kingstown",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg/1024px-Flag_of_Saint_Vincent_and_the_Grenadines.svg.png",
-        shape: "",
-      },
-      {
-        country: "Salwador",
-        capital: "San Salvador",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Flag_of_El_Salvador.svg/1024px-Flag_of_El_Salvador.svg.png",
-        shape: "",
-      },
-      {
-        country: "Stany Zjednoczone",
-        capital: "Waszyngton",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png",
-      },
-    ],
-    SouthAmerica: [],
-    Asia: [],
-    Africa: [],
-    Oceania: [],
   },
+  { c6: [] },
 ];

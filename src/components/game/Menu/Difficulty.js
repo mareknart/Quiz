@@ -1,5 +1,5 @@
 import DifficultyTile from "./DifficultyTile";
-import { LEVEL } from "../../../data/Level";
+import { LEVEL } from "../../../data/LevelPl";
 import classes from "./Difficulty.module.css";
 import { useDispatch } from "react-redux";
 import { playerActions } from "../../../store/player-slice";

@@ -9,12 +9,17 @@ const Navbar = (props) => {
       <nav className={classes.nav}>
         <div className={classes.title}>Quiz geograficzny</div>
         {player.player.name && (
-          <div>
-            <div className={classes.player}>Witaj {player.player.name}</div>
+          <div className={classes.player}>Witaj {player.player.name} {player.player.difficulty}</div>
+        )}
+        {player.player.language && (
+          <div className={classes.flag}>
+            <img
+              className={classes.flagpic}
+              src={player.player.flag}
+              alt="flag"
+            />
           </div>
         )}
-        {player.player.language &&
-        <div className={classes.flag}><img className={classes.flagpic} src={player.player.flag} alt='flag'/></div>}
       </nav>
       <main>{props.children}</main>
     </Fragment>

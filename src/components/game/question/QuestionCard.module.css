@@ -1,0 +1,25 @@
+.main {
+    color: white;
+    width: 80%;
+}
+.content{
+    padding: 10px;
+}
+
+.title{
+    font-size: 1.25rem;
+    
+    border-bottom: 2px solid white;
+}
+
+.question{
+    font-size:  2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.action{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

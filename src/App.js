@@ -1,8 +1,9 @@
 import { Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
-import CountryData from "./components/wiki/CountryData";
 import Navbar from "./components/layout/Navbar";
 import Main from "./pages/Main";
+import Countries from "./components/Countries";
+import QestionCard from "./components/game/question/QuestionCard";
 
 
 
@@ -17,7 +18,10 @@ const App = () => {
           <Main/>
         </Route>
         <Route path="/wiki" exact>
-          <CountryData />
+          <Countries />
+        </Route>
+        <Route path='/question' exact>
+          <QestionCard/>
         </Route>
       </Switch>
     </Navbar>
