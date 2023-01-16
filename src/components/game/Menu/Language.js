@@ -25,8 +25,8 @@ const Language = (props) => {
 
         <LangTile country={props.poland} />
       </div>
-      <div className={classes.item} onClick={clickFlagHandler}>
-        <div className={classes.title}>Choose your language.</div>
+      <div className={classes.item} >
+        <div className={classes.title} >Choose your language.</div>
 
         <LangTile country={props.british} />
       </div>

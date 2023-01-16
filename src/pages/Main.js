@@ -10,7 +10,6 @@ import Difficulty from "../components/game/menu/Difficulty";
 const Main = (props) => {
   const [playerNameEntered, setPlayerNameEntered] = useState(false);
   const [language, setLanguage] = useState(false);
-  const [difficulty, setDifficulty] = useState(0);
 
   const onNameEnterHandler = () => {
     setPlayerNameEntered(true);
