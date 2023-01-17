@@ -6,12 +6,7 @@ import Main from "./pages/Main";
 import Countries from "./components/Countries";
 import QestionCard from "./components/game/question/QuestionCard";
 
-
-
-
-const App = () => {
-
-  
+const App = () => { 
 
   return (
     <Navbar>

@@ -1,20 +1,20 @@
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
 import Card from "../../UI/Card";
-import { playerActions } from "../../../store/player-slice";
+import { gameActions } from "../../../store/game-slice";
 import classes from "./Player.module.css";
-
+import { useTranslation } from "react-i18next";
 
 const Player = (props) => {
   const playerNameRef = useRef();
   const dispatch = useDispatch();
-
+  const { t } = useTranslation();
 
   const submitNameHandler = (event) => {
     event.preventDefault();
     const playerName = playerNameRef.current.value;
     dispatch(
-      playerActions.addPlayerName({
+      gameActions.addPlayerName({
         name: playerName,
       })
     );
@@ -22,17 +22,20 @@ const Player = (props) => {
   };
 
   return (
-    <Card>
-      <form onSubmit={submitNameHandler}>
-        <div className={classes.control}>
-          <label htmlFor="name">Twoje imię</label>
-          <input type="text" id="name" ref={playerNameRef} />
-        </div>
-        <div className={classes.actions}>
-          <button type="submit">OK</button>
-        </div>
-      </form>
-    </Card>
+    <div>
+      {" "}
+      <Card>
+        <form onSubmit={submitNameHandler}>
+          <div className={classes.control}>
+            <label htmlFor="name">{t("your_name")}</label>
+            <input type="text" id="name" ref={playerNameRef} />
+          </div>
+          <div className={classes.actions}>
+            <button type="submit">OK</button>
+          </div>
+        </form>
+      </Card>
+    </div>
   );
 };
 

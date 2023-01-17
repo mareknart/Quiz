@@ -1,9 +1,14 @@
 {
+    "hello": "Hello",
+    "difficulty": "Difficulty level",
+    "your_name": "What is your name?",
     "quiz": "Geographic Quiz",
-    "level1": "Uczeń",
-    "level2": "Średniak",
-    "level3": "Mistrz",
-    "level1_description": "Na tym poziomie trudności możesz wybrać jeden kontynent. Pytania będą obejmować nazwy Państw i ich stolice.",
-    "level2_description": "Na tym poziomie trudności wybiera się dwa kontynenty. Do nazw państw i stolic dochodzą flagi państwowe.",
-    "level3_description": "Ten poziom trudności zawiera pytania ze wszystkich kontynentów oraz dodatkowo kształty państw."
+    "level1": "Beginner",
+    "level2": "Advance",
+    "level3": "Master",
+    "level1_description": "On this level you can choose one continent. A questions included countries and their's capitals",
+    "level2_description": "On this level you can choose two continents. Questions included all from Beginner level plus country flags.",
+    "level3_description": "This level include all continents and all items from previous levels plus country shapes.",
+    "question_Capital":"Którego państwa stolicą jest {name}?",
+    "question_Country":"Stolicą {name} jest:"
 }

@@ -5,12 +5,13 @@ nav {
     color: white;
     height: 4rem;
     padding: 10px;
-    background-color: rgb(48, 29, 129);
+    background-color: rgba(48, 29, 129, 1);
+    
 }
 
-nav .scroll{
+.scroll{
     position: sticky;
-    box-shadow: 0 10px 10px;
+    box-shadow: 0px 5px 8px black;
 }
 
 .title{

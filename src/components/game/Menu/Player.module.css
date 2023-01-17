@@ -2,10 +2,11 @@
     margin-bottom: 0.5rem;
     color: white;
     padding: 0.5rem;
+    text-align: center;
 }
 
 .control label{
-    text-align: center;
+    
     font-weight: bold;
     font-size: 2rem;
     display: block;
@@ -16,7 +17,6 @@
     font: inherit;
     padding: 0.35rem;
     border-radius: 4px;
-    display: block;
 }
 
 .actions{

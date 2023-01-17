@@ -1,19 +1,21 @@
 import DifficultyTile from "./DifficultyTile";
-import { LEVEL } from "../../../data/LevelPl";
+import { LEVEL } from "../../../data/Level";
 import classes from "./Difficulty.module.css";
 import { useDispatch } from "react-redux";
-import { playerActions } from "../../../store/player-slice";
+import { gameActions } from "../../../store/game-slice";
+import { useTranslation } from "react-i18next";
 
 const Difficulty = () => {
   const dispatch = useDispatch();
+  const {t}=useTranslation();
   const onSetLevelHandler = (event) => {
     dispatch(
-      playerActions.setDifficulty({ difficulty: event.currentTarget.id })
+      gameActions.setDifficulty({ difficulty: event.currentTarget.id })
     );
   };
   return (
-    <div>
-      <div className={classes.title}>Poziom trudności</div>
+    <div className={classes.item}>
+      <div className={classes.title}>{t('difficulty')}</div>
       <div className={classes.diff}>
         {LEVEL.map((item) => (
           <div className={classes.content} key={item.name} id={item.level} onClick={onSetLevelHandler}>

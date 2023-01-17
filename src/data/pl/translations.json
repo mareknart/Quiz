@@ -1,9 +1,14 @@
 {
+    "hello": "Witaj",
+    "difficulty": "Poziom trudności",
+    "your_name": "Jak masz na imię?",
     "quiz": "Quiz geograficzny",
     "level1": "Uczeń",
     "level2": "Średniak",
     "level3": "Mistrz",
     "level1_description": "Na tym poziomie trudności możesz wybrać jeden kontynent. Pytania będą obejmować nazwy Państw i ich stolice.",
     "level2_description": "Na tym poziomie trudności wybiera się dwa kontynenty. Do nazw państw i stolic dochodzą flagi państwowe.",
-    "level3_description": "Ten poziom trudności zawiera pytania ze wszystkich kontynentów oraz dodatkowo kształty państw."
+    "level3_description": "Ten poziom trudności zawiera pytania ze wszystkich kontynentów oraz dodatkowo kształty państw.",
+    "question_Capital":"{name} is capital city of:",
+    "question_Country":"Capital city of {name} is:"
 }
