@@ -2,10 +2,10 @@ import { useState } from "react";
 import Player from "../components/game/menu/Player";
 import classes from "./Main.module.css";
 import Difficulty from "../components/game/menu/Difficulty";
+import { Countries } from "../data/CountryData";
 
 const Main = (props) => {
   const [playerNameEntered, setPlayerNameEntered] = useState(false);
-
   const onNameEnterHandler = () => {
     setPlayerNameEntered(true);
   };

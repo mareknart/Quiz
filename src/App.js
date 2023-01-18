@@ -1,6 +1,6 @@
 import { Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
-import "./i18next";
+
 import Navbar from "./components/layout/Navbar";
 import Main from "./pages/Main";
 import Countries from "./components/Countries";

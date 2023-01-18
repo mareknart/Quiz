@@ -2,6 +2,7 @@ main {
   display: flex;
   margin-top: 5rem;
   justify-content: center;
+  color: white;
 }
 
 .item {

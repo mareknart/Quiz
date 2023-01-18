@@ -138,303 +138,303 @@ export const Countries = [
   { c3: [] },
   { c4: [] },
   {
-    c5: [
-      {
-        country: "Albania",
-        capital: "Tirana",
+    europe: {
+      "albania" :{
+        country: "europe.albania",
+        capital: "europe.albania_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/1280px-Flag_of_Albania.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Location_Albania_Europe.png/1024px-Location_Albania_Europe.png",
       },
-      {
-        country: "Andora",
-        capital: "Andora",
+      "andorra":{
+        country: "europe.andorra",
+        capital: "europe.andorra_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Andorra.svg/1024px-Flag_of_Andorra.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Location_Andorra_Europe.png/685px-Location_Andorra_Europe.png",
       },
-      {
-        country: "Austria",
-        capital: "Wiedeń",
+      "austria":{
+        country: "europe.austria",
+        capital: "europe.austria_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/1024px-Flag_of_Austria.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/EU-Austria.svg/713px-EU-Austria.svg.png",
       },
-      {
-        country: "Belgia",
-        capital: "Bruksela",
+      "belgium":{
+        country: "europe.belgium",
+        capital: "europe.belgium_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1024px-Flag_of_Belgium.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/EU-Belgium.svg/1024px-EU-Belgium.svg.png",
       },
-      {
-        country: "Białoruś",
-        capital: "Mińsk",
+      "belarus":{
+        country: "europe.belarus",
+        capital: "europe.belarus_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/1024px-Flag_of_Belarus.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Europe-Belarus.svg/713px-Europe-Belarus.svg.png",
       },
-      {
-        country: "Bośnia i Hercegowina",
-        capital: "Sarajewo",
+      "bosna":{
+        country: "europe.bosna",
+        capital: "europe.bosna_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/1024px-Flag_of_Bosnia_and_Herzegovina.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Europe-Bosnia_and_Herzegovina.svg/1024px-Europe-Bosnia_and_Herzegovina.svg.png",
       },
-      {
-        country: "Bułgaria",
-        capital: "Sofia",
+      "bulgaria":{
+        country: "europe.bulgaria",
+        capital: "europe.bulgaria_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/1024px-Flag_of_Bulgaria.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/EU-Bulgaria.svg/1024px-EU-Bulgaria.svg.png",
       },
-      {
-        country: "Chorwacja",
-        capital: "Zagrzeb",
+      "croatia":{
+        country: "europe.croatia",
+        capital: "europe.croatia_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/1024px-Flag_of_Croatia.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/EU-Croatia.svg/1024px-EU-Croatia.svg.png",
       },
-      {
-        country: "Czarnogóra",
-        capital: "Podgorica",
+      "montenegro":{
+        country: "europe.montenegro",
+        capital: "europe.montenegro_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Montenegro.svg/1024px-Flag_of_Montenegro.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Europe-Montenegro.svg/1024px-Europe-Montenegro.svg.png",
       },
-      {
-        country: "Czechy",
-        capital: "Praga",
+      "czech":{
+        country: "europe.czech",
+        capital: "europe.czech_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1024px-Flag_of_the_Czech_Republic.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/EU-Czech_Republic.svg/1024px-EU-Czech_Republic.svg.png",
       },
-      {
-        country: "Dania",
-        capital: "Kopenhaga",
+      "denmark":{
+        country: "europe.denmark",
+        capital: "europe.denmark_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/1024px-Flag_of_Denmark.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/EU-Denmark.svg/1024px-EU-Denmark.svg.png",
       },
-      {
-        country: "Estonia",
-        capital: "Tallinn",
+      "estonia":{
+        country: "europe.estonia",
+        capital: "europe.estonia_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_Estonia.svg/1024px-Flag_of_Estonia.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/EU-Estonia.svg/1024px-EU-Estonia.svg.png",
       },
-      {
-        country: "Finlandia",
-        capital: "Helisinki",
+      "finland":{
+        country: "europe.finland",
+        capital: "europe.finland_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Finland.svg/1024px-Flag_of_Finland.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/EU-Finland.svg/1024px-EU-Finland.svg.png",
       },
-      {
-        country: "Francja",
-        capital: "Paryż",
+      "france":{
+        country: "europe.france",
+        capital: "europe.france_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/1024px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/EU-France.svg/1024px-EU-France.svg.png",
       },
-      {
-        country: "Grecja",
-        capital: "Ateny",
+      "greece":{
+        country: "europe.greece",
+        capital: "europe.greece_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/1024px-Flag_of_Greece.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/EU-Greece.svg/1024px-EU-Greece.svg.png",
       },
-      {
-        country: "Hiszpania",
-        capital: "Madryt",
+      "spain":{
+        country: "europe.spain",
+        capital: "europe.spain_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1024px-Flag_of_Spain.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/EU-Spain.svg/1024px-EU-Spain.svg.png",
       },
-      {
-        country: "Holandia",
-        capital: "Amsterdam",
+      "netherlands":{
+        country: "europe.netherlands",
+        capital: "europe.netherlands_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1024px-Flag_of_the_Netherlands.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/EU-Netherlands.svg/1024px-EU-Netherlands.svg.png",
       },
-      {
-        country: "Irlandia",
-        capital: "Dublin",
+      "ireland":{
+        country: "europe.ireland",
+        capital: "europe.ireland_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/1024px-Flag_of_Ireland.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/EU-Ireland.svg/1024px-EU-Ireland.svg.png",
       },
-      {
-        country: "Islandia",
-        capital: "Reykjavik",
+      "iceland":{
+        country: "europe.iceland",
+        capital: "europe.iceland_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/1024px-Flag_of_Iceland.svg.png",
         shape: "",
       },
-      {
-        country: "Kazachstan",
-        capital: "Astana",
+      "kazakhstan":{
+        country: "europe.kazakhstan",
+        capital: "europe.kazakhstan_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/1024px-Flag_of_Kazakhstan.svg.png",
         shape: "",
       },
-      {
-        country: "Liechtenstein",
-        capital: "Vaduz",
+      "liechtenstein":{
+        country: "europe.liechtenstein",
+        capital: "europe.liechtenstein_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Flag_of_Liechtenstein.svg/1024px-Flag_of_Liechtenstein.svg.png",
         shape: "",
       },
-      {
-        country: "Litwa",
-        capital: "Wilno",
+      "lithuania":{
+        country: "europe.lithuania",
+        capital: "europe.lithuania_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Lithuania.svg/1024px-Flag_of_Lithuania.svg.png",
         shape: "",
       },
-      {
-        country: "Luksemburg",
-        capital: "Luksemburg",
+      "luxembourg":{
+        country: "europe.luxembourg",
+        capital: "europe.luxembourg_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Flag_of_Luxembourg.svg/1024px-Flag_of_Luxembourg.svg.png",
         shape: "",
       },
-      {
-        country: "Łotwa",
-        capital: "Ryga",
+      "latvia":{
+        country: "europe.latvia",
+        capital: "europe.latvia_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Latvia.svg/1024px-Flag_of_Latvia.svg.png",
         shape: "",
       },
-      {
-        country: "Macedonia Północna",
-        capital: "Skopje",
+      "macedonia":{
+        country: "europe.macedonia",
+        capital: "europe.macedonia_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/1024px-Flag_of_North_Macedonia.svg.png",
         shape: "",
       },
-      {
-        country: "Malta",
-        capital: "Valletta",
+      "malta":{
+        country: "europe.malta",
+        capital: "europe.malta_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Malta.svg/1024px-Flag_of_Malta.svg.png",
         shape: "",
       },
-      {
-        country: "Mołdawia",
-        capital: "Kiszyniów",
+      "moldova":{
+        country: "europe.moldova",
+        capital: "europe.moldova_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Moldova.svg/1024px-Flag_of_Moldova.svg.png",
         shape: "",
       },
-      {
-        country: "Monako",
-        capital: "Monako",
+      "monaco":{
+        country: "europe.monaco",
+        capital: "europe.monaco_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Flag_of_Monaco.svg/1024px-Flag_of_Monaco.svg.png",
         shape: "",
       },
-      {
-        country: "Niemcy",
-        capital: "Berlin",
+      "germany":{
+        country: "europe.germany",
+        capital: "europe.germany_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1024px-Flag_of_Germany.svg.png",
         shape: "",
       },
-      {
-        country: "Norwegia",
-        capital: "Oslo",
+      "norway":{
+        country: "europe.norway",
+        capital: "europe.norway_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/1024px-Flag_of_Norway.svg.png",
         shape: "",
       },
-      {
-        country: "Polska",
-        capital: "Warszawa",
+      "poland":{
+        country: "europe.poland",
+        capital: "europe.poland_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Flag_of_Poland_%28normative%29.svg/1024px-Flag_of_Poland_%28normative%29.svg.png",
         shape: "",
       },
-      {
-        country: "Portugalia",
-        capital: "Lizbona",
+      "portugal":{
+        country: "europe.portugal",
+        capital: "europe.portugal_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1024px-Flag_of_Portugal.svg.png",
         shape: "",
       },
-      {
-        country: "Rosja",
-        capital: "Moskwa",
+      "russia":{
+        country: "europe.russia",
+        capital: "europe.russia_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/1024px-Flag_of_Russia.svg.png",
         shape: "",
       },
-      {
-        country: "Ruminia",
-        capital: "Bukareszt",
+      "romania":{
+        country: "europe.romania",
+        capital: "europe.romania_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/1024px-Flag_of_Romania.svg.png",
         shape: "",
       },
-      {
-        country: "San Marino",
-        capital: "San Marino",
+      "sanMarino":{
+        country: "europe.sanMarino",
+        capital: "europe.sanMarino_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Flag_of_San_Marino.svg/1024px-Flag_of_San_Marino.svg.png",
         shape: "",
       },
-      {
-        country: "Serbia",
-        capital: "Belgrad",
+      "serbia":{
+        country: "europe.serbia",
+        capital: "europe.serbia_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/1024px-Flag_of_Serbia.svg.png",
         shape: "",
       },
-      {
-        country: "Słowacja",
-        capital: "Bratysława",
+      "slovakia":{
+        country: "europe.slovakia",
+        capital: "europe.slovakia_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/1024px-Flag_of_Slovakia.svg.png",
         shape: "",
       },
-      {
-        country: "Słowenia",
-        capital: "Lublana",
+      "slovenia":{
+        country: "europe.slovenia",
+        capital: "europe.slovenia_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Flag_of_Slovenia.svg/1024px-Flag_of_Slovenia.svg.png",
         shape: "",
       },
-      {
-        country: "Szwajcaria",
-        capital: "Berno",
+      "switzerland":{
+        country: "europe.switzerland",
+        capital: "europe.switzerland_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/1024px-Flag_of_Switzerland.svg.png",
         shape: "",
       },
-      {
-        country: "Szwecja",
-        capital: "Sztokholm",
+      "sweden":{
+        country: "europe.sweden",
+        capital: "europe.sweden_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/1024px-Flag_of_Sweden.svg.png",
         shape: "",
       },
-      {
-        country: "Turcja",
-        capital: "Ankara",
+      "turkey":{
+        country: "europe.turkey",
+        capital: "europe.turkey_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1024px-Flag_of_Turkey.svg.png",
         shape: "",
       },
-      {
-        country: "Ukraina",
-        capital: "Kijów",
+      "ukraine":{
+        country: "europe.ukraine",
+        capital: "europe.ukraine_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1024px-Flag_of_Ukraine.svg.png",
         shape: "",
       },
-      {
-        country: "Watykan",
-        capital: "Watykan",
+      "vatican":{
+        country: "europe.vatican",
+        capital: "europe.vatican_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_the_Vatican_City.svg/1024px-Flag_of_the_Vatican_City.svg.png",
         shape: "",
       },
-      {
-        country: "Węgry",
-        capital: "Budapeszt",
+      "hungary":{
+        country: "europe.hungary",
+        capital: "europe.hungary_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flag_of_Hungary.svg/1024px-Flag_of_Hungary.svg.png",
         shape: "",
       },
-      {
-        country: "Wielka Brytania",
-        capital: "Londyn",
+      "unitedKingdom":{
+        country: "europe.unitedKingdom",
+        capital: "europe.unitedKingdom_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1024px-Flag_of_the_United_Kingdom_%281-2%29.svg.png",
         shape: "",
       },
-      {
-        country: "Włochy",
-        capital: "Rzym",
+      "italy":{
+        country: "europe.italy",
+        capital: "europe.italy_capital",
         flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1024px-Flag_of_Italy.svg.png",
         shape:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/EU-Italy.svg/1024px-EU-Italy.svg.png",
       },
-    ],
+    },
   },
   { c6: [] },
 ];
