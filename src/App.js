@@ -3,8 +3,9 @@ import "./App.css";
 
 import Navbar from "./components/layout/Navbar";
 import Main from "./pages/Main";
-import Countries from "./components/Countries";
+//import Countries from "./components/Countries";
 import QestionCard from "./components/game/question/QuestionCard";
+import Continents from "./components/game/menu/Continents";
 
 const App = () => { 
 
@@ -18,7 +19,7 @@ const App = () => {
           <Main/>
         </Route>
         <Route path="/wiki" exact>
-          <Countries />
+          <Continents />
         </Route>
         <Route path='/question' exact>
           <QestionCard/>

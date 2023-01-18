@@ -1,7 +1,7 @@
 export const Countries = [
   { c1: [] },
   {
-    c2: [
+    northAmerica: [
       {
         country: "Antigua i Barbuda",
         capital: "Saint John's",

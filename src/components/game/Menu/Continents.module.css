@@ -1,0 +1,14 @@
+.item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.tile{
+    margin: 10px;
+}
+
+.tile:hover{
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.6), -5px -5px 5px rgba(255, 255, 255, 0.6), 5px -5px 5px rgba(255, 255, 255, 0.6), -5px 5px 5px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}

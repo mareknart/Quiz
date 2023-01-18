@@ -5,13 +5,14 @@ import { useDispatch } from "react-redux";
 import { gameActions } from "../../../store/game-slice";
 import { useTranslation } from "react-i18next";
 
-const Difficulty = () => {
+const Difficulty = (props) => {
   const dispatch = useDispatch();
   const {t}=useTranslation();
   const onSetLevelHandler = (event) => {
     dispatch(
       gameActions.setDifficulty({ difficulty: event.currentTarget.id })
     );
+    props.setDifficulty();
   };
   return (
     <div className={classes.item}>

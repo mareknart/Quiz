@@ -1,6 +1,6 @@
 main {
   display: flex;
-  margin-top: 5rem;
+  vertical-align: middle;
   justify-content: center;
   color: white;
 }
