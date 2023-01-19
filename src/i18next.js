@@ -8,6 +8,7 @@ import enContinents from './translations/en/continents.json'
 import { initReactI18next } from "react-i18next";
 
 i18next.use(initReactI18next).init({
+  compatibilityJSON: 'v3',
   fallbackLng: "pl",
   resources: {
     pl: {

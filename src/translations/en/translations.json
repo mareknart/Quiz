@@ -1,5 +1,7 @@
 {
     "hello": "Hello",
+    "continent1": "Choose {{count}} continent",
+    "continent2": "Choose {{count}} continents",
     "difficulty": "Difficulty level",
     "your_name": "What is your name?",
     "quiz": "Geographic Quiz",

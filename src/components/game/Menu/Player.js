@@ -22,7 +22,7 @@ const Player = (props) => {
   };
 
   return (
-    <div>
+    <div className={classes.card}>
       {" "}
       <Card>
         <form onSubmit={submitNameHandler}>

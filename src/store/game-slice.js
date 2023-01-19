@@ -3,8 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 const gameSlice = createSlice({
   name: "game",
   initialState: {
-    language: "pl",
+    language: "pl-PL",
     player: { name: null, difficulty: null },
+    game:{difficulty: null, continents: [], countries:[]},
     score: { 0: 0, 1: 0, 2: 0 },
   },
   reducers: {
@@ -15,8 +16,11 @@ const gameSlice = createSlice({
       state.language = action.payload.language;
     },
     setDifficulty(state, action) {
-      state.player.difficulty = action.payload.difficulty;
+      state.game.difficulty = action.payload.difficulty;
     },
+    setContinent(state,action){
+      state.game.continents.push(action.payload.continent);
+    }
   },
 });
 

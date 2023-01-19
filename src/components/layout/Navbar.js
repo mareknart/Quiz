@@ -38,7 +38,7 @@ const Navbar = (props) => {
         <div className={classes.title}>{t("quiz")}</div>
         {game.player.name && (
           <div className={classes.player}>
-            {t('hello')} {game.player.name} {game.player.difficulty}
+            {t('hello')} {game.player.name}
           </div>
         )}
         <div className={classes.flag} onClick={onFlagClickHandler}>
