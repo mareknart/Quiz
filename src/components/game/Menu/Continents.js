@@ -1,16 +1,20 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
 import { CONTINENTS } from "../../../data/Continents";
 import { gameActions } from "../../../store/game-slice";
+import LoadingSpinner from "../../UI/LoadingSpinner";
 import classes from "./Continents.module.css";
 import ContinentTile from "./ContinentTile";
 
 const Continents = () => {
   const [imgLoaded, setImgLoaded] = useState(false);
+  const [contNumber, setContNumber] = useState(0);
   const { t } = useTranslation();
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const game = useSelector((state) => state.game);
+  const history = useHistory();
   useEffect(() => {
     const loadImage = (image) => {
       return new Promise((resolve, reject) => {
@@ -28,24 +32,49 @@ const Continents = () => {
       .catch((err) => console.log("Failed to load images", err));
   }, []);
 
-  const onContinentSet = (continent)=>{
-    dispatch(gameActions.setContinent({continent: continent}))
-  }
+  const diffLevel = game.game.difficulty;
+
+  useEffect(() => {
+    if (diffLevel == 1 && contNumber == 1) {
+      console.log(`start game continent ${game.game.continents[0]}`);
+      history.push("/game");
+    }
+    if (diffLevel == 2 && contNumber == 2) {
+      console.log(
+        `start game continent ${game.game.continents[0]} and ${game.game.continents[1]}`
+      );
+      history.push("/game");
+    } else {
+      console.log("gra");
+    }
+  }, [contNumber, game.game.continents, diffLevel, history]);
+
+  const onContinentSet = (continent) => {
+    dispatch(gameActions.setContinent({ continent: continent }));
+    setContNumber((previousState) => previousState + 1);
+  };
 
   return (
     <div>
-      <div className={classes.pageTitle}>
-        {t("continent1",{count:1})}
-      </div>
+      {diffLevel == 1 ? (
+        <div className={classes.pageTitle}>{t("continent1", { count: 1 })}</div>
+      ) : (
+        <div className={classes.pageTitle}>{t("continent2", { count: 2 })}</div>
+      )}
+
       <div className={classes.item}>
         {imgLoaded ? (
           CONTINENTS.map((item) => (
             <div className={classes.tile} key={item.name}>
-              <ContinentTile shape={item.shape} name={item.name} continentSet={onContinentSet}/>
+              <ContinentTile
+                shape={item.shape}
+                name={item.name}
+                continentSet={onContinentSet}
+              />
             </div>
           ))
         ) : (
-          <p>loading...</p>
+          <LoadingSpinner />
         )}
       </div>
     </div>

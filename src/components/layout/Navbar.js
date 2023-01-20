@@ -18,6 +18,7 @@ const Navbar = (props) => {
   const [language, setLanguage]=useState(en);
   const { t, i18n } = useTranslation();
   const barStyle = `${classes.nav}`;
+  
   const onFlagClickHandler = (event) => {
     event.preventDefault();
     if (game.language === 'pl'){

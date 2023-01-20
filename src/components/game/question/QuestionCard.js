@@ -1,8 +1,32 @@
+import { useDispatch, useSelector } from "react-redux";
 import Card from "../../UI/Card";
 import Answer from "./Answer";
 import classes from "./QuestionCard.module.css";
+import { COUNTRIES } from "../../../data/CountryData";
+import { gameActions } from "../../../store/game-slice";
+import { useEffect, useMemo } from "react";
+import { useTranslation } from "react-i18next";
 
 const QestionCard = () => {
+  const game = useSelector((state) => state.game);
+  const {t}=useTranslation('countries')
+  const dispatch = useDispatch();
+  const continent = game.game.continents;
+  useEffect(() => {
+    dispatch(
+      gameActions.setQuestions({ countries: COUNTRIES[continent], number: 5 })
+    );
+  }, [continent, dispatch]);
+
+
+  const randomCountries = game.game.countries; 
+   
+  randomCountries.map((x)=>{
+
+    let country = COUNTRIES[continent][x];
+
+    return console.log(`${t(country.country)}`);
+})
   return (
     <div className={classes.main}>
       <Card>
