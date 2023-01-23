@@ -1,0 +1,25 @@
+.tile{
+    width: 3rem;
+    height: 3rem;
+    margin: 10px;
+}
+.content{
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tile.active{
+    box-shadow: 6px 6px 3px rgba(255, 255, 255, 0.6), -4px -4px 3px rgba(255, 255, 255, 0.6), 6px -4px 3px rgba(255, 255, 255, 0.6), -4px 6px 3px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+.incorrect{
+    box-shadow: 6px 6px 3px rgba(255, 0, 0, 0.6), -4px -4px 3px rgba(255, 0, 0, 0.6), 6px -4px 3px rgba(255, 0, 0, 0.6), -4px 6px 3px rgba(255, 0, 0, 0.6);
+    border-radius: 10px;
+}
+.correct{
+    box-shadow: 6px 6px 3px rgba(0, 255, 0, 0.6), -4px -4px 3px rgba(0, 255, 0, 0.6), 6px -4px 3px rgba(0, 255, 0, 0.6), -4px 6px 3px rgba(0, 255, 0, 0.6);
+    border-radius: 10px;
+}

@@ -2,6 +2,8 @@
     "hello": "Hello",
     "continent1": "Choose {{count}} continent",
     "continent2": "Choose {{count}} continents",
+    "capital_Question":"Capital city of {{country}} is:",
+    "country_question":"{{city}} is capital of:",
     "difficulty": "Difficulty level",
     "your_name": "What is your name?",
     "quiz": "Geographic Quiz",

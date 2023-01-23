@@ -36,21 +36,17 @@ const Continents = () => {
 
   useEffect(() => {
     if (diffLevel == 1 && contNumber == 1) {
-      console.log(`start game continent ${game.game.continents[0]}`);
+      
       history.push("/game");
     }
     if (diffLevel == 2 && contNumber == 2) {
-      console.log(
-        `start game continent ${game.game.continents[0]} and ${game.game.continents[1]}`
-      );
+      
       history.push("/game");
-    } else {
-      console.log("gra");
-    }
+    } 
   }, [contNumber, game.game.continents, diffLevel, history]);
 
   const onContinentSet = (continent) => {
-    dispatch(gameActions.setContinent({ continent: continent }));
+    dispatch(gameActions.setContinent({ continent: continent}));
     setContNumber((previousState) => previousState + 1);
   };
 

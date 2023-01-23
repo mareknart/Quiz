@@ -4,7 +4,7 @@ import Answer from "./Answer";
 import classes from "./QuestionCard.module.css";
 import { COUNTRIES } from "../../../data/CountryData";
 import { gameActions } from "../../../store/game-slice";
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const QestionCard = () => {
@@ -12,9 +12,10 @@ const QestionCard = () => {
   const {t}=useTranslation('countries')
   const dispatch = useDispatch();
   const continent = game.game.continents;
+  
   useEffect(() => {
     dispatch(
-      gameActions.setQuestions({ countries: COUNTRIES[continent], number: 5 })
+      gameActions.setQuestions({ countries: COUNTRIES[continent[0]]})
     );
   }, [continent, dispatch]);
 
@@ -23,7 +24,7 @@ const QestionCard = () => {
    
   randomCountries.map((x)=>{
 
-    let country = COUNTRIES[continent][x];
+    let country = COUNTRIES[continent[0]][x];
 
     return console.log(`${t(country.country)}`);
 })
