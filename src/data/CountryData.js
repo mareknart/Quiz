@@ -1,5 +1,10 @@
 export const COUNTRIES = {
-  africa: {},
+  africa: {egypt:{
+    country: "",
+    capital: "",
+    flag:"",
+    shape:""
+  }},
 
   northAmerica: {
     antigua:{
@@ -135,8 +140,8 @@ export const COUNTRIES = {
     },
   },
 
-  southAmerica: [],
-  asia: [],
+  southAmerica: {},
+  asia: {},
 
   europe: {
     albania: {
@@ -436,5 +441,5 @@ export const COUNTRIES = {
     },
   },
 
-  oceania: [],
+  oceania: {},
 };
