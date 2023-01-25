@@ -8,15 +8,16 @@ const Game = (props) => {
   const game = useSelector((state) => state.game);
 
   const history = useHistory();
-  const continents = game.game.continents.length;
+  const difficulty = game.game.difficulty;
   const countries = game.game.countries;
   useEffect(() => {
-    if (continents === 0) {
+    if (!difficulty) {
       history.push("/main");
     }
-  }, [history, continents]);
+  }, [history, difficulty]);
 
   return (
+    
     <div className={classes.main}>
       <div className={classes.game}>
         <QuestionSet number={countries.length} />
