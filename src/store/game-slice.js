@@ -41,7 +41,7 @@ const gameSlice = createSlice({
       switch (level) {
         case "1":
           numberOfQuestions = 10;
-          //logika do poziomu 1
+          //logika do poziomu 18787
           break;
         case "2":
           numberOfQuestions = 20;
