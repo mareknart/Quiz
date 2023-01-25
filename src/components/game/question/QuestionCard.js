@@ -9,25 +9,23 @@ import { useTranslation } from "react-i18next";
 
 const QestionCard = () => {
   const game = useSelector((state) => state.game);
-  const {t}=useTranslation('countries')
+  //const { t } = useTranslation("countries");
   const dispatch = useDispatch();
-  const continent = game.game.continents;
+  const gameContinents = game.game.continents;
   
   useEffect(() => {
+    let contArray = [];
+    gameContinents.map((item) => {
+      for (const key in COUNTRIES[item]) {
+        contArray.push(COUNTRIES[item][key]);
+      }
+    });
     dispatch(
-      gameActions.setQuestions({ countries: COUNTRIES[continent[0]]})
+      //gameActions.setQuestions({ countries: COUNTRIES[gameContinents[0]] })
+      gameActions.setQuestions({ countries: contArray })
     );
-  }, [continent, dispatch]);
+  }, [gameContinents, dispatch]);
 
-
-  const randomCountries = game.game.countries; 
-   
-  randomCountries.map((x)=>{
-
-    let country = COUNTRIES[continent[0]][x];
-
-    return console.log(`${t(country.country)}`);
-})
   return (
     <div className={classes.main}>
       <Card>

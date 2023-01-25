@@ -11,7 +11,7 @@ const Game = (props) => {
   const continents = game.game.continents.length;
   const countries = game.game.countries;
   useEffect(() => {
-    if (continents == 0) {
+    if (continents === 0) {
       history.push("/main");
     }
   }, [history, continents]);

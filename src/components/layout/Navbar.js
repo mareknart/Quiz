@@ -33,10 +33,13 @@ const Navbar = (props) => {
     }
   };
 
+  const newGameHandler =()=>{
+    dispatch(gameActions.setNewGame());
+  }
   return (
     <Fragment>
       <nav className={barStyle}>
-        <div className={classes.title}>{t("quiz")}</div>
+        <div className={classes.title} onClick={newGameHandler}>{t("quiz")}</div>
         {game.player.name && (
           <div className={classes.player}>
             {t('hello')} {game.player.name}

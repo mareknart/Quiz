@@ -1,17 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const questionType = ['country', 'capital', 'flag', 'shape'];
+
 const gameSlice = createSlice({
   name: "game",
   initialState: {
     language: "pl",
     player: { name: null },
-    game: { difficulty: null, continents: [], countries: [] },
+    game: { difficulty: null, continents: [], countries: []},
     questions: [],
     //question {number, type, correct_answer, answers_arrray*3}
   },
   reducers: {
     setNewGame(state, action) {
-      state.player = { name: null }
+      state.player = { name: null };
       state.game = { difficulty: null, continents: [], countries: [] };
       state.questions = [];
     },
@@ -28,7 +30,12 @@ const gameSlice = createSlice({
       state.game.continents.push(action.payload.continent);
     },
     setQuestions(state, action) {
-      const countries = Object.keys(action.payload.countries);
+      const countriesList = action.payload.countries;
+      let tempCountries = [];
+      for (const key in countriesList) {
+        tempCountries.push(countriesList[key]);
+      }
+
       const level = state.game.difficulty;
       let numberOfQuestions;
       switch (level) {
@@ -49,9 +56,15 @@ const gameSlice = createSlice({
       }
 
       if (state.game.countries.length < numberOfQuestions) {
-        for (let i = 0; i < numberOfQuestions; i++) {
-          let x = Math.floor(Math.random() * countries[0].length);
-          state.game.countries.push(countries[x]);
+        while (state.game.countries.length < numberOfQuestions) {
+          let x = Math.floor(Math.random() * tempCountries.length);
+          const existCountry = state.game.countries.find(
+            (item) => item.country === tempCountries[x].country
+          );
+          if (!existCountry) {
+            state.game.countries.push(tempCountries[x]);
+            console.log(tempCountries[x]);
+          }
         }
       }
     },
