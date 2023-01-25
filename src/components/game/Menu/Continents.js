@@ -35,11 +35,11 @@ const Continents = () => {
   const diffLevel = game.game.difficulty;
 
   useEffect(() => {
-    if (diffLevel == 1 && contNumber == 1) {
+    if (diffLevel === '1' && contNumber === 1) {
       
       history.push("/game");
     }
-    if (diffLevel == 2 && contNumber == 2) {
+    if (diffLevel === '2' && contNumber === 2) {
       
       history.push("/game");
     } 
@@ -52,7 +52,7 @@ const Continents = () => {
 
   return (
     <div>
-      {diffLevel == 1 ? (
+      {diffLevel === '1' ? (
         <div className={classes.pageTitle}>{t("continent1", { count: 1 })}</div>
       ) : (
         <div className={classes.pageTitle}>{t("continent2", { count: 2 })}</div>
