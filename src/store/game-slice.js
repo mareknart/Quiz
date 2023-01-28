@@ -8,8 +8,7 @@ const gameSlice = createSlice({
     language: "pl",
     player: { name: null },
     game: { difficulty: null, continents: [], countries: [] },
-    questions: [],
-    //question in array questions {type, correct_answer, answers_arrray*3}
+    questions: []
   },
   reducers: {
     setNewGame(state, action) {
@@ -71,6 +70,7 @@ const gameSlice = createSlice({
         while (state.game.countries.length < numberOfQuestions) {
           let x = randomCountryNo();
           let answers = [];
+          let correctAns = null;
           let questionType = QUESTIONTYPE[randomType()];
           let existCountry = randomCountry(x, state.game.countries);
           if (!existCountry) {
@@ -85,7 +85,23 @@ const gameSlice = createSlice({
                 answers.push(tempCountries[rndNumber]);
               }
             }
-            state.questions.push({type: questionType, answers: answers})
+            correctAns = answers[0];
+
+            const randomizeAnswers = (arrayToRnd) => {
+              let index = arrayToRnd.length,
+                randomIndex;
+              while (index !== 0) {
+                randomIndex = Math.floor(Math.random() * index);
+                index--;
+                [arrayToRnd[index], arrayToRnd[randomIndex]] = [
+                  arrayToRnd[randomIndex],
+                  arrayToRnd[index],
+                ];
+              }
+              return arrayToRnd
+            };
+            randomizeAnswers(answers)
+            state.questions.push({type: questionType, correctAnswer: correctAns,answers: answers})
           }
         }
       }
