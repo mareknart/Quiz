@@ -106,7 +106,7 @@ export const COUNTRIES = {
       country: "africa.seychelles",
       capital: "africa.seychelles_capital",
       flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Seychelles.svg/23px-Flag_of_Seychelles.svg.png",
-      shape:
+      shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Location_Seychelles_AU_Africa.svg/250px-Location_Seychelles_AU_Africa.svg.png"
     },
     somalia: {
       country: "africa.somalia",
