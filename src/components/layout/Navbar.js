@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
 import { gameActions } from "../../store/game-slice";
 import LangTile from "../game/menu/LangTile";
 import classes from "./Navbar.module.css";
@@ -14,6 +15,7 @@ const en = {
 
 const Navbar = (props) => {
   const dispatch = useDispatch()
+  const history = useHistory()
   const game = useSelector((state) => state.game);
   const [language, setLanguage]=useState(en);
   const { t, i18n } = useTranslation();
@@ -33,10 +35,14 @@ const Navbar = (props) => {
     }
   };
 
+  const newGameHandler =()=>{
+    dispatch(gameActions.setNewGame());
+    history.push("/main");
+  }
   return (
     <Fragment>
       <nav className={barStyle}>
-        <div className={classes.title}>{t("quiz")}</div>
+        <div className={classes.title} onClick={newGameHandler}>{t("quiz")}</div>
         {game.player.name && (
           <div className={classes.player}>
             {t('hello')} {game.player.name}

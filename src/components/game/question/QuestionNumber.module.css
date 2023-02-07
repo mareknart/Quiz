@@ -10,7 +10,7 @@
     font-weight: bold;
 }
 
-.tile.active{
+.active{
     box-shadow: 6px 6px 3px rgba(255, 255, 255, 0.6), -4px -4px 3px rgba(255, 255, 255, 0.6), 6px -4px 3px rgba(255, 255, 255, 0.6), -4px 6px 3px rgba(255, 255, 255, 0.6);
     border-radius: 10px;
 }

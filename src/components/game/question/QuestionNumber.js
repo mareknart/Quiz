@@ -2,9 +2,15 @@ import classes from "./QuestionNumber.module.css";
 import Card from "../../UI/Card";
 
 const QuestionNumber = (props) => {
-    const style = `${classes.tile}`
+
+    let style = `${classes.tile}`
+
+    if(props.isActive){
+      style = `${classes.tile} ${classes.active}`
+    }
+
   return (
-    <div className={style} key={props.i}>
+    <div className={style}>
       <Card>
         <div className={classes.content}>{props.children}</div>
       </Card>

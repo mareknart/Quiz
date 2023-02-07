@@ -1,17 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const QUESTIONTYPE = ["country", "capital", "flag", "shape"];
+
 const gameSlice = createSlice({
   name: "game",
   initialState: {
     language: "pl",
     player: { name: null },
     game: { difficulty: null, continents: [], countries: [] },
-    questions: [],
-    //question {number, type, correct_answer, answers_arrray*3}
+    questions: []
   },
   reducers: {
     setNewGame(state, action) {
-      state.player = { name: null }
+      state.player = { name: null };
       state.game = { difficulty: null, continents: [], countries: [] };
       state.questions = [];
     },
@@ -28,30 +29,80 @@ const gameSlice = createSlice({
       state.game.continents.push(action.payload.continent);
     },
     setQuestions(state, action) {
-      const countries = Object.keys(action.payload.countries);
+      const countriesList = action.payload.countries;
+      let tempCountries = [];
       const level = state.game.difficulty;
       let numberOfQuestions;
+      let questionTypeIndex;
+      const randomType = () => Math.floor(Math.random() * questionTypeIndex);
+      const randomCountryNo = () =>
+        Math.floor(Math.random() * tempCountries.length);
+
+      const randomCountry = (indexNumber, array) =>
+        array.find(
+          (item) => item.country === tempCountries[indexNumber].country
+        );
+
+      for (const key in countriesList) {
+        tempCountries.push(countriesList[key]);
+      }
       switch (level) {
         case "1":
+          //logic for level 1
           numberOfQuestions = 10;
-          //logika do poziomu 1
+          questionTypeIndex = 2;
           break;
         case "2":
           numberOfQuestions = 20;
-          //logika do poziomu 2
+          //logic for level 2
+          questionTypeIndex = 3;
           break;
         case "3":
           numberOfQuestions = 30;
-          //logika do poziomu 3
+          //logic for level 3
+          questionTypeIndex = 4;
           break;
         default:
           break;
       }
-
+      
       if (state.game.countries.length < numberOfQuestions) {
-        for (let i = 0; i < numberOfQuestions; i++) {
-          let x = Math.floor(Math.random() * countries[0].length);
-          state.game.countries.push(countries[x]);
+        while (state.game.countries.length < numberOfQuestions) {
+          let x = randomCountryNo();
+          let answers = [];
+          let correctAns = null;
+          let questionType = QUESTIONTYPE[randomType()];
+          let existCountry = randomCountry(x, state.game.countries);
+          if (!existCountry) {
+            state.game.countries.push(tempCountries[x]);
+            answers.push(tempCountries[x]);
+            while (answers.length < 4) {
+              let rndNumber = randomCountryNo();
+
+              let randomAnswer = randomCountry(rndNumber, answers);
+
+              if (!randomAnswer) {
+                answers.push(tempCountries[rndNumber]);
+              }
+            }
+            correctAns = answers[0];
+
+            const randomizeAnswers = (arrayToRnd) => {
+              let index = arrayToRnd.length,
+                randomIndex;
+              while (index !== 0) {
+                randomIndex = Math.floor(Math.random() * index);
+                index--;
+                [arrayToRnd[index], arrayToRnd[randomIndex]] = [
+                  arrayToRnd[randomIndex],
+                  arrayToRnd[index],
+                ];
+              }
+              return arrayToRnd
+            };
+            randomizeAnswers(answers)
+            state.questions.push({type: questionType, correctAnswer: correctAns,answers: answers})
+          }
         }
       }
     },

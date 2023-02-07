@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { CONTINENTS } from "../../../data/Continents";
+import { COUNTRIES } from "../../../data/CountryData";
 import { gameActions } from "../../../store/game-slice";
 import LoadingSpinner from "../../UI/LoadingSpinner";
 import classes from "./Continents.module.css";
@@ -15,6 +16,9 @@ const Continents = () => {
   const dispatch = useDispatch();
   const game = useSelector((state) => state.game);
   const history = useHistory();
+  const diffLevel = game.game.difficulty;
+  const gameContinents = game.game.continents;
+  
   useEffect(() => {
     const loadImage = (image) => {
       return new Promise((resolve, reject) => {
@@ -32,27 +36,36 @@ const Continents = () => {
       .catch((err) => console.log("Failed to load images", err));
   }, []);
 
-  const diffLevel = game.game.difficulty;
+  
+  const setCountries = useCallback(() => {
+    let contArray = [];
+    gameContinents.map((item) => {
+      for (const key in COUNTRIES[item]) {
+        contArray.push(COUNTRIES[item][key]);
+      }
+    });
+    dispatch(gameActions.setQuestions({ countries: contArray }));
+  }, [dispatch, gameContinents]);
 
   useEffect(() => {
-    if (diffLevel == 1 && contNumber == 1) {
-      
+    if (diffLevel === "1" && contNumber === 1) {
+      setCountries();
       history.push("/game");
     }
-    if (diffLevel == 2 && contNumber == 2) {
-      
+    if (diffLevel === "2" && contNumber === 2) {
+      setCountries();
       history.push("/game");
-    } 
-  }, [contNumber, game.game.continents, diffLevel, history]);
+    }
+  }, [contNumber, game.game.continents, diffLevel, history, setCountries]);
 
   const onContinentSet = (continent) => {
-    dispatch(gameActions.setContinent({ continent: continent}));
+    dispatch(gameActions.setContinent({ continent: continent }));
     setContNumber((previousState) => previousState + 1);
   };
 
   return (
     <div>
-      {diffLevel == 1 ? (
+      {diffLevel === "1" ? (
         <div className={classes.pageTitle}>{t("continent1", { count: 1 })}</div>
       ) : (
         <div className={classes.pageTitle}>{t("continent2", { count: 2 })}</div>

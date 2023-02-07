@@ -337,7 +337,6 @@ export const COUNTRIES = {
       shape: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Location_Togo_AU_Africa.svg/250px-Location_Togo_AU_Africa.svg.png"
     },
   },
-
   northAmerica: {
     antigua: {
       country: "Antigua i Barbuda",
@@ -469,6 +468,7 @@ export const COUNTRIES = {
       country: "Stany Zjednoczone",
       capital: "Waszyngton",
       flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png",
+      shape: "",
     },
   },
 

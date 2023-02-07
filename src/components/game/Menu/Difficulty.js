@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 const Difficulty = (props) => {
   const dispatch = useDispatch();
   const {t}=useTranslation();
+  
   const onSetLevelHandler = (event) => {
     dispatch(
       gameActions.setDifficulty({ difficulty: event.currentTarget.id })
