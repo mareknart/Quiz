@@ -10,9 +10,8 @@
     "level1": "Beginner",
     "level2": "Advance",
     "level3": "Master",
+    "questionNo": "Question no {{count}}",
     "level1_description": "On this level you can choose one continent. A questions included countries and their's capitals",
     "level2_description": "On this level you can choose two continents. Questions included all from Beginner level plus country flags.",
-    "level3_description": "This level include all continents and all items from previous levels plus country shapes.",
-    "question_Capital":"Którego państwa stolicą jest {name}?",
-    "question_Country":"Stolicą {name} jest:"
+    "level3_description": "This level include all continents and all items from previous levels plus country shapes."   
 }
