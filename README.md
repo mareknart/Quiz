@@ -6,3 +6,6 @@ Main goal is answer questions correctly about world's countries, it's capitals, 
 
 ## All graphic used in project came from: 
 [Wikipedia](https://wikipedia.org) 
+
+
+Currently project is under construction as part of teaching my kids java script programming :)
